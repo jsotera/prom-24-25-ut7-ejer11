@@ -1,0 +1,45 @@
+@startuml
+abstract class Sprite {
+}
+
+
+class Bullet {
+}
+
+
+class Metralleta {
+}
+
+
+class Enemy {
+}
+
+class Rifle {
+}
+
+
+class GameController {
+}
+
+
+class Tower {
+}
+
+
+interface Weapon {
+}
+
+class GigaBullet {
+}
+
+GameController o--> Sprite
+Sprite <|-- Bullet
+Weapon o-U-> Bullet
+Tower o--> Weapon
+Enemy o--> Weapon
+Weapon <|.. Metralleta
+Sprite <|-- Enemy
+Weapon <|.. Rifle
+Sprite <|-- Tower
+Bullet <|--U GigaBullet
+@enduml
