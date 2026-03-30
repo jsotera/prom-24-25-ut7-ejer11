@@ -1,7 +1,7 @@
 module es.masanz.ut7.towerdefense {
     requires javafx.controls;
     requires javafx.fxml;
-    requires org.jsoup;
+    
     requires jdk.xml.dom;
     requires java.sql;
 
